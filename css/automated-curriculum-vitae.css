@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+
+}
+.container{
+    max-width: 60%;
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+    left: 25%;
+    padding: 25px 20px 20px 65px;
+    /* text-align: center; */
+}
+h1{
+   font-size: 38px;
+   font-weight: bolder;
+}
+
+.btn{
+    margin-top: 10px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 1px 1px 13px 6px  rgb(219, 223, 231);
+    cursor: pointer;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+input[type=text],input[type=number],input[type=email],textarea{
+    width: 100%;
+    padding: 12px;
+    border:1px solid rgb(219, 223, 231); 
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+}
+ 
+@media screen and(max-width:800px){
+    body {
+        overflow: hidden;
+    }
+    .container{
+        width: 140%; 
+            left: 20px;
+            right: 20px;
+            width: 120%;
+            height: 100vh;
+            overflow: hidden;
+            top: 2px;
+    }
+    .container h1{
+        font-size: 8%;
+    }
+
+    .content{
+        height: auto;
+        }
+
+    input[type=text],textarea{
+        width: 90%;
+        margin-top: 0;
+    }
+     
+    
+
+@media screen and(max-width:600px){
+     body {
+        overflow: hidden;
+    } 
+
+    .container{
+         
+             left: 20px;
+             right: 20px; 
+             width: 120%;
+             height: 100vh;
+             overflow: hidden;
+             top: 2px;
+     }
+     .container  h1{
+         font-size: 8%;
+     }
+
+    .content{
+        height: auto;
+        }
+
+    input[type=text],textarea{
+        width: 90%;
+        margin-top: 0;
+    }
+    
+    .addre{
+        font-size: 10px;
+    }
+} 
+
+@media screen and(max-width:550px) {
+    .container{
+        max-width: 70%;
+        font-size: 18px;
+        left: 20px;
+             right: 20px; 
+             width: 120%;
+             height: 100vh;
+             overflow: hidden;
+             top: 2px;
+         
+    }
+    .container h1{
+        padding: 20px;
+    }
+    .addre{
+        width: 50%;
+        font-size: 10px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and(max-width:450px) {
+    .container{
+        max-width: 100%;
+        font-size: 18px;
+        left: 20px;
+             right: 20px; 
+             width: 120%;
+             height: 100vh;
+             overflow: hidden;
+             top: 2px;
+             display: flex;
+             flex-direction: column;
+    }
+   .container h1{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .addre{
+        width: 50%;
+        font-size: 10px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
